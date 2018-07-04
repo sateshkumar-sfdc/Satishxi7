@@ -1,0 +1,3 @@
+<apex:page standardController="Contact">
+    <c:ValidationComponent objectName="Contact" addressBlockField="MailingCountry" enableEditMode="true"/>
+</apex:page>

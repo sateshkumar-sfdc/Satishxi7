@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Peoplem</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Peoplems</value>
+    </caseValues>
+    <fields>
+        <label><!-- Designation --></label>
+        <name>Designation__c</name>
+        <picklistValues>
+            <masterLabel>test</masterLabel>
+            <translation><!-- test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emp Id --></label>
+        <name>Emp_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project1 --></label>
+        <name>Project1__c</name>
+        <relationshipLabel><!-- Peoplems --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skillset --></label>
+        <name>Skillset__c</name>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

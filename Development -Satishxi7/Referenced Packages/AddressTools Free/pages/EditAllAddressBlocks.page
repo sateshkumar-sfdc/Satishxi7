@@ -1,0 +1,5 @@
+<apex:page controller="pw_cc.EditAllAddressBlocksController">
+    <apex:repeat value="{!addressBlocks}" var="addressBlock" id="theRepeat">
+        <apex:iframe src="{!URLFOR(pageWithPrefix)}?id={!objectId}&objectName={!objectName}&addressBlockField={!addressBlock}&enablePopUp={!enablePopUp}&enableEditMode={!enableEditMode}&validationComponent=true" height="450px" width="50%"/>
+    </apex:repeat>
+</apex:page>

@@ -1,0 +1,10 @@
+<a href="{!Account.Link}"><b>{!Account.Name}</b></a>
+
+
+<p>You'll notice specific Salesforce ID's in the copy of the above template, such as {Lead.FirstName}. Salesforce provides a series of merge fields you can use to automatically customize your templates based on the lead intelligence you or your marketing team has gathered about a contact. The <a href="https://www.getsignals.com/crm-ready-sales-email-templates" target="_blank" >free templates we mentioned above</a> have these fields already embedded in them.</p>
+
+<p>Within Salesforce, simply select field type, choose a resulting field from the dropdown menu, and then copy the merge field value that results into your email. </p>
+
+<h4>Bonus: Use Salesforce email templates right in Gmail or Outlook.{!User.FirstName}</h4>
+
+click {!Account.Link}

@@ -1,0 +1,7 @@
+Hi {!Account.Name}
+
+how r u.
+
+
+Thanks,
+{!User.LastName}

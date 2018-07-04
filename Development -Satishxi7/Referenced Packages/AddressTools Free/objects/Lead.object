@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AddressStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not checked</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Not matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parsed but not found</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ambiguous</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Corrected</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Verified</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CountryLookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Country Lookup</label>
+        <referenceTo>CountryObject__c</referenceTo>
+        <relationshipLabel>Leads</relationshipLabel>
+        <relationshipName>Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LocationAccuracy__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Location Accuracy</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not checked</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Not matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parsed but not found</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ambiguous</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Country</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Postal Code</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Premise</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LocationSource__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Location Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Default</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Validated</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StateLookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>State Lookup</label>
+        <referenceTo>State__c</referenceTo>
+        <relationshipLabel>Leads</relationshipLabel>
+        <relationshipName>Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ZipCodeLookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Zip/Postal Code Lookup</label>
+        <referenceTo>ZipCode__c</referenceTo>
+        <relationshipLabel>Leads</relationshipLabel>
+        <relationshipName>Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <webLinks>
+        <fullName>AddressToolsActivator</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Activate AddressTools</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/pw_ccpro__CountriesJavaScript?core.apexpages.devmode.url=1&quot;)}
+{!REQUIRESCRIPT(&quot;/resource/pw_ccpro__CountryCompleteResources/javascript/CountryAutoComplete.js&quot;)}
+{!REQUIRESCRIPT(&quot;/resource/pw_ccpro__AddressCompleteResources/javascript/AddressComplete.js&quot;)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>AddressValidator</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Validate Address</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var linkId = &apos;lea16street_validatelnk&apos;;
+ 
+function clickLink(id) { 
+   var link = document.getElementById(id);
+   if (!link){ 
+       return false;
+   } 
+
+   if(!!link &amp;&amp; link.click) { 
+       link.click(); 
+   } 
+   return true;
+} 
+
+if (window.ProvenWorks === undefined) {
+{!REQUIRESCRIPT(&quot;/apex/pw_cc__CountriesJavaScript?core.apexpages.devmode.url=1&quot;)};
+{!REQUIRESCRIPT(&quot;/resource/pw_cc__CountryCompleteResources/javascript/CountryAutoComplete.js&quot;)};
+{!REQUIRESCRIPT(&quot;/resource/pw_cc__AddressCompleteResources/javascript/AddressComplete.js&quot;)};
+}
+
+setTimeout(function run() {
+  var clicked = clickLink(linkId);
+  if (!clicked){
+      setTimeout(run, 500);
+  }
+}, 500);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>EditAddresses</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Edit addresses</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&apos;/apex/pw_ccpro__EditAllAddressBlocks?id={!Lead.Id}&apos;,&apos;_self&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>EditAddressesInNewTab</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Edit Addresses in New Tab</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&apos;/apex/pw_ccpro__EditAllAddressBlocks?id={!Lead.Id}&apos;,&apos;_blank&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>EditAddressesInNewWindow</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Edit Addresses in New Window</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>{!URLFOR(&quot;/apex/pw_ccpro__EditAllAddressBlocks&quot;)}?id={!Lead.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>EditLead</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Edit Lead</masterLabel>
+        <openType>sidebar</openType>
+        <page>LeadNewEditPage</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>NewLead</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Lead</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&apos;/apex/LeadNewEditPage?id=00Q&apos;,&apos;_self&apos;);</url>
+    </webLinks>
+</CustomObject>

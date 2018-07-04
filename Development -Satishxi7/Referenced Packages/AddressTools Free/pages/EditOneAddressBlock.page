@@ -1,0 +1,3 @@
+<apex:page controller="pw_cc.EditOneAddressBlockController">
+    <apex:iframe src="{!URLFOR(pageWithPrefix)}?id={!objectId}&objectName={!objectName}&enablePopUp={!enablePopUp}&addressBlockField={!addressBlock}&enableEditMode={!enableEditMode}&hideFields={!hideFields}&showFields={!showFields}&validationComponent=true&onlyOneAddress=true" height="450px" width="50%"/>
+</apex:page>

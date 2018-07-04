@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>testing</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>testing1</name>
+    <style>none</style>
+    <subject>Test {!Account.Name}</subject>
+    <textOnly>{!Account.Name}
+
+You&apos;ll notice specific Salesforce ID&apos;s in the copy of the above template, such as {Lead.FirstName}. Salesforce provides a series of merge fields you can use to automatically customize your templates based on the lead intelligence you or your marketing team has gathered about a contact. The free templates we mentioned above have these fields already embedded in them.
+
+Within Salesforce, simply select field type, choose a resulting field from the dropdown menu, and then copy the merge field value that results into your email.
+
+Bonus: Use Salesforce email templates right in Gmail or Outlook.{!User.FirstName}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

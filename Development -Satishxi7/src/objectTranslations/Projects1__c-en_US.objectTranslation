@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project1s</value>
+    </caseValues>
+    <fields>
+        <label><!-- ActualCost --></label>
+        <name>ActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- ActualEnddate --></label>
+        <name>ActualEnddate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- #Employees --></label>
+        <name>Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProjectedEnddate --></label>
+        <name>ProjectedEnddate__c</name>
+    </fields>
+    <fields>
+        <label><!-- StartData --></label>
+        <name>StartData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

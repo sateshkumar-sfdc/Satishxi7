@@ -1,0 +1,6 @@
+<apex:page sidebar="false" showHeader="false" contentType="application/javascript" cache="false">
+	pw_cc_countries.sessionId = '{!$Api.Session_ID}';
+	document.addEventListener('DOMContentLoaded', function(){ 
+		pw_cc_countries.sessionId = '{!$Api.Session_ID}';
+	});
+</apex:page>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Conference --></label>
+        <name>Conference</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Customer Service --></label>
+        <name>Customer_Service</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Dreamhouse Console --></label>
+        <name>Dreamhouse_Console</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Hotel Reservation App --></label>
+        <name>HRA</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- PMS --></label>
+        <name>PMS</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Project Manager --></label>
+        <name>Project_Manager</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Recruiting --></label>
+        <name>Recruiting</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Star Pharma --></label>
+        <name>Star_Pharma</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- test --></label>
+        <name>test</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- test2 --></label>
+        <name>test2</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Auth Account Already Linked --></label>
+        <name>Zendesk__Auth_Account_Already_Linked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth_Error_Saving_Token --></label>
+        <name>Zendesk__Auth_Error_Saving_Token</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Error on Domain Update --></label>
+        <name>Zendesk__Auth_Error_on_Subdomain_Update</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Invalid Domain --></label>
+        <name>Zendesk__Auth_Invalid_Subdomain</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth No Global Settings --></label>
+        <name>Zendesk__Auth_No_Global_Settings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth No Linked Domain --></label>
+        <name>Zendesk__Auth_No_Linked_Subdomain</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth No Domain Provided --></label>
+        <name>Zendesk__Auth_No_Subdomain_Provided</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Requesting Access Token --></label>
+        <name>Zendesk__Auth_Requesting_Access_Token</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Domain Already Linked --></label>
+        <name>Zendesk__Auth_Subdomain_Already_Linked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Domain Deletion Failed --></label>
+        <name>Zendesk__Auth_Subdomain_Deletion_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Domain Deletion Successful --></label>
+        <name>Zendesk__Auth_Subdomain_Deletion_Successful</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Help Text --></label>
+        <name>Zendesk__Auth_Subdomain_Help_Text</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Domain Update Success Message --></label>
+        <name>Zendesk__Auth_Subdomain_Update_Success_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Authentication Success Message --></label>
+        <name>Zendesk__Auth_Success_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unlink Domain Confirmation --></label>
+        <name>Zendesk__Auth_Unlink_Subdomain_Confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth Unlink Domain First --></label>
+        <name>Zendesk__Auth_Unlink_Subdomain_First</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Auth User Does Not Match --></label>
+        <name>Zendesk__Auth_User_Does_Not_Match</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Authentication Wait Message --></label>
+        <name>Zendesk__Auth_Wait_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Global Authentication Block Title --></label>
+        <name>Zendesk__ZGlobalAuth_Title</name>
+    </customLabels>
+    <customPageWebLinks>
+        <label><!-- test cust link --></label>
+        <name>test_cust_link</name>
+    </customPageWebLinks>
+    <customTabs>
+        <label><!-- CustomAccountRecordType --></label>
+        <name>CustomAccountRecordType</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Sales Coach Start --></label>
+        <name>SalesCoachStart</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Sales Coach Setup --></label>
+        <name>Sales_Coach_Setup</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Omni Channel work for Report type --></description>
+        <label><!-- Omni Channel work for Report type --></label>
+        <name>Omni_Channel_work_for_Report_type</name>
+        <sections>
+            <label><!-- Agent Work --></label>
+            <name>Agent Work</name>
+        </sections>
+    </reportTypes>
+</Translations>
