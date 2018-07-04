@@ -7,7 +7,7 @@ public class AC1 {
             System.debug('a greater than b');
         }
         system.debug('a is less than B');
-       // system.debug('after the condition Satish1 test');
+       // system.debug('after the condition Satish1 test1');
    }
 
 }
